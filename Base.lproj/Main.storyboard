@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CircleMenu_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="d2u-ey-Jha">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.89833348989999995" green="0.88678222890000002" blue="0.85741913319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHD-ar-I17">
+                                <rect key="frame" x="120" y="568" width="400" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H03-3v-IIj">
+                                        <rect key="frame" x="211" y="30" width="50" height="50"/>
+                                        <state key="normal" image="icons8-edit"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcW-Xe-11N">
+                                        <rect key="frame" x="102" y="50" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NiK-VW-EhZ"/>
+                                            <constraint firstAttribute="width" constant="50" id="caT-Qm-UYI"/>
+                                        </constraints>
+                                        <state key="normal" image="icons8-topic"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pva-jK-fgQ">
+                                        <rect key="frame" x="45" y="132" width="50" height="50"/>
+                                        <state key="normal" image="icons8-telephone"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFM-dx-tPi">
+                                        <rect key="frame" x="59" y="231" width="50" height="50"/>
+                                        <state key="normal" title="Button" image="icons8-audio"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75294117647058822" green="0.75294117647058822" blue="0.75294117647058822" alpha="0.59540881848630134" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EFM-dx-tPi" firstAttribute="leading" secondItem="qHD-ar-I17" secondAttribute="leading" constant="59" id="0ha-Cr-Itz"/>
+                                    <constraint firstAttribute="trailing" secondItem="H03-3v-IIj" secondAttribute="trailing" constant="139" id="1eB-25-HhG"/>
+                                    <constraint firstAttribute="bottom" secondItem="YcW-Xe-11N" secondAttribute="bottom" constant="300" id="2Nx-t8-dqg"/>
+                                    <constraint firstAttribute="trailing" secondItem="EFM-dx-tPi" secondAttribute="trailing" constant="291" id="4YW-Yh-NCw"/>
+                                    <constraint firstItem="H03-3v-IIj" firstAttribute="leading" secondItem="qHD-ar-I17" secondAttribute="leading" constant="211" id="62q-Sw-nQE"/>
+                                    <constraint firstAttribute="bottom" secondItem="EFM-dx-tPi" secondAttribute="bottom" constant="119" id="8Xl-wp-tpf"/>
+                                    <constraint firstItem="H03-3v-IIj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YcW-Xe-11N" secondAttribute="trailing" constant="8" symbolic="YES" id="ARN-h5-q8u"/>
+                                    <constraint firstAttribute="bottom" secondItem="H03-3v-IIj" secondAttribute="bottom" constant="320" id="HQb-Eq-qw5"/>
+                                    <constraint firstItem="EFM-dx-tPi" firstAttribute="top" secondItem="pva-jK-fgQ" secondAttribute="bottom" constant="49" id="MeV-Rh-qrG"/>
+                                    <constraint firstItem="pva-jK-fgQ" firstAttribute="leading" secondItem="qHD-ar-I17" secondAttribute="leading" constant="45" id="Pum-5j-8nP"/>
+                                    <constraint firstAttribute="bottom" secondItem="pva-jK-fgQ" secondAttribute="bottom" constant="218" id="QnW-5S-stb"/>
+                                    <constraint firstItem="H03-3v-IIj" firstAttribute="top" secondItem="qHD-ar-I17" secondAttribute="top" constant="30" id="Zkv-sX-Jfs"/>
+                                    <constraint firstAttribute="trailing" secondItem="pva-jK-fgQ" secondAttribute="trailing" constant="305" id="bTJ-OQ-a66"/>
+                                    <constraint firstItem="pva-jK-fgQ" firstAttribute="top" secondItem="qHD-ar-I17" secondAttribute="top" constant="132" id="dyA-iC-Awu"/>
+                                    <constraint firstItem="YcW-Xe-11N" firstAttribute="top" secondItem="qHD-ar-I17" secondAttribute="top" constant="50" id="ttv-qP-2rU"/>
+                                    <constraint firstItem="YcW-Xe-11N" firstAttribute="leading" secondItem="qHD-ar-I17" secondAttribute="leading" constant="102" id="yZL-Vy-RcL"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJZ-Od-UMB" customClass="CircleActionButton" customModule="CircleMenu_" customModuleProvider="target">
+                                <rect key="frame" x="256" y="704" width="128" height="128"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Eoa-Sg-u5q"/>
+                                    <constraint firstAttribute="width" constant="128" id="TRp-2Z-zmu"/>
+                                </constraints>
+                                <state key="normal" image="1"/>
+                                <connections>
+                                    <action selector="MainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wzp-aZ-wLF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qHD-ar-I17" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="524" id="4cC-bZ-av1"/>
+                            <constraint firstAttribute="trailing" secondItem="d2u-ey-Jha" secondAttribute="trailing" id="DDG-W3-WWU"/>
+                            <constraint firstItem="d2u-ey-Jha" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HGE-Qr-jAi"/>
+                            <constraint firstAttribute="bottom" secondItem="d2u-ey-Jha" secondAttribute="bottom" id="JJ1-9l-bA2"/>
+                            <constraint firstAttribute="trailing" secondItem="qHD-ar-I17" secondAttribute="trailing" constant="-106" id="fHm-yJ-75a"/>
+                            <constraint firstAttribute="bottom" secondItem="qHD-ar-I17" secondAttribute="bottom" constant="-72" id="fm8-Cp-BfB"/>
+                            <constraint firstItem="qHD-ar-I17" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="i1h-RY-OGT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mJZ-Od-UMB" secondAttribute="bottom" constant="30" id="iwT-DI-va0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mJZ-Od-UMB" secondAttribute="trailing" constant="30" id="q2D-82-LqC"/>
+                            <constraint firstItem="d2u-ey-Jha" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tXG-dt-6FY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AddButton" destination="mJZ-Od-UMB" id="IFL-zV-bAc"/>
+                        <outlet property="CircleView" destination="qHD-ar-I17" id="1Nj-id-q9T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="128" height="128"/>
+        <image name="2" width="540" height="960"/>
+        <image name="icons8-audio" width="128" height="128"/>
+        <image name="icons8-edit" width="128" height="128"/>
+        <image name="icons8-telephone" width="128" height="128"/>
+        <image name="icons8-topic" width="128" height="128"/>
+    </resources>
+</document>
